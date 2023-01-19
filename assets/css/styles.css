@@ -1,0 +1,24 @@
+@import url(./icons.css);
+@import url(./header.css);
+@import url(./banner.css);
+
+:root {
+    /* Varáveis */
+    --background-color: #EBECEE;
+    --white-color: #FFF;
+    --primary-color: #002F52;
+    --secondary-color: #EB9B00;
+    --primary-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%); 
+    --main-font: "Poppins";
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.icon {
+    color: var(--primary-color);
+}

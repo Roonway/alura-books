@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.header-toolbar {
+    margin-left: auto;
+}
+
+.header-logo, .menu-hamburger-btn, .toolbar-item{
+    padding: 1rem;
+}
+
+.menu-hamburger-btn {
+    align-self: stretch;
+    background-color: transparent;
+    width: 40px;
+    display: inline-block;
+    border: none;
+    box-sizing: content-box;
+    transition: all .4s;
+}
+
+.menu-hamburger-btn i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.menu-hamburger-btn.active {
+    background-color: var(--primary-color);
+}
+
+.menu-hamburger-btn.active i {
+    color: var(--white-color);
+}
+
+.menu-hamburger {
+    background-color: var(--white-color);
+    display: none;
+    width: 65vw;
+    position: absolute;
+    top: 100%;
+}
+
+.menu-hamburger-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.menu-hamburger-title,
+.menu-hamburger-item {
+    display: inline-block;
+    padding: 1em;
+}
+
+.menu-hamburger-link{
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* A propriedade 'background-clip: text' aplica o background apenas onde houver texto */
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+.menu-hamburger.active {
+    display: block;
+}
+
+.horizontalbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.verticalbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    font-size: 20px;
+}
+
+.toolbar .toolbar-link {
+    text-decoration: none;
+}
+
+.toolbar .toolbar-icon {
+    font-size: 28px;
+}
+

@@ -48,3 +48,7 @@ i.icon-bars::before {
 i.icon-profile::before {
     content: "\e905";
 }
+
+i.icon-heart-solid::before {
+    content: "\e906";
+}

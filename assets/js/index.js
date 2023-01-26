@@ -9,11 +9,29 @@ buttonMenuHamburger.addEventListener('click', () => {
 
 // Swiper
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 25,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
     spaceBetween: 20,
     navigation: false,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-  });
+});
+
+// Button Like
+const buttonLike = document.querySelector('.card-like');
+
+buttonLike.onclick = () => {
+    buttonLike.classList.toggle('active');
+};

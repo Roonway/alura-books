@@ -1,5 +1,5 @@
 // Menu Hamburger
-const buttonMenuHamburger = document.querySelector('.menu-hamburger-btn');
+const buttonMenuHamburger = document.querySelector('.btn-menu-hamburger');
 const menuHamburger = document.querySelector('.menu-hamburger');
 
 buttonMenuHamburger.addEventListener('click', () => {
@@ -35,3 +35,11 @@ const buttonLike = document.querySelector('.card-like');
 buttonLike.onclick = () => {
     buttonLike.classList.toggle('active');
 };
+
+// Sub-menu link
+const linkSubMenu = document.querySelector('.link-sub-menu');
+
+linkSubMenu.addEventListener('click', (element) => {
+    let subMenu = element.target.parentElement;
+    subMenu.classList.toggle('showMenu');
+});

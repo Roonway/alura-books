@@ -21,7 +21,7 @@
 
 <body>
     <header class="header">
-        <button type="button" class="menu-hamburger-btn" aria-label="Menu"><i class="icon icon-bars"></i></button>
+        <button type="button" class="btn-menu-hamburger" aria-label="Menu"><i class="icon icon-bars"></i></button>
         <nav class="menu-hamburger">
             <span class="menu-hamburger-title">Categorias</span>
             <ul class="menu-hamburger-links verticalbar">
@@ -42,10 +42,39 @@
                 </li>
             </ul>
         </nav>
-        <img src="assets/images/logo.svg" alt="Logo da Alurabooks" class="header-logo">
-        <nav class="header-toolbar toolbar">
+        <a href="#" class="header-link">
+            <img src="assets/images/logo-reduzida.svg" alt="Logo da Alurabooks" class="header-logo logo-mobile">
+            <img src="assets/images/logo.svg" alt="Logo da Alurabooks" class="header-logo logo-desktop">
+        </a>
+        <nav class="header-nav navbar">
+            <ul class="navbar-options horizontalbar">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link link-sub-menu">Categorias</a>
+                    <ul class="sub-menu verticalbar">
+                        <li class="sub-menu-item">
+                            <a href="#" class="sub-menu-link">Programação</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#" class="sub-menu-link">Front-end</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#" class="sub-menu-link">Infraestrutura</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#" class="sub-menu-link">Business</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#" class="sub-menu-link">Design & Ux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Favorito</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Minha Estante</a></li>
+            </ul>
+        </nav>
+        <nav class="header-nav toolbar">
             <ul class="toolbar-links horizontalbar">
-                <li class="toolbar-item">
+                <li class="toolbar-item item-favorite">
                     <a href="#" class="toolbar-link"><i class="icon icon-heart toolbar-icon"></i></a>
                 </li>
                 <li class="toolbar-item">

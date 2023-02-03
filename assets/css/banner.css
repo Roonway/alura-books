@@ -18,7 +18,7 @@
     line-height: 24px;
 }
 
-.banner-search {
+input.banner-search {
     background: url(../icons/magnifying-glass.svg) no-repeat scroll 5px 5px;
     background-position: 28px;
     font-size: 1em;
@@ -29,7 +29,7 @@
     padding: .8em 1.8em .8em 4em;
 }
 
-.banner-search::placeholder{
+input.banner-search::placeholder{
     font-family: var(--main-font);
     color: var(--white-color);
     text-align: center;

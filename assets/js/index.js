@@ -35,30 +35,41 @@ const swiper = new Swiper('.swiper', {
                 stretch: -30,
                 depth: 100,
                 modifier: 1,
-                slideShadows: false,
+                slideShadows: true,
             },
             spaceBetween: 60,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
         },
         1728: {
             slidesPerView: 3,
             coverflowEffect: {
                 rotate: 0,
-                stretch: -10,
+                stretch: -30,
                 depth: 100,
                 modifier: 1,
-                slideShadows: false,
+                slideShadows: true,
             },
             spaceBetween: 60,
-        }
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        },
+        
     }
 });
 
 // Button Like
-const buttonLike = document.querySelector('.card-like');
+const buttonsLike = document.querySelectorAll('.card-like');
+for (let el of buttonsLike){
+    el.addEventListener('click', (element)  => {
+        element.target.parentElement.classList.toggle('active');
+    });
+ }
 
-buttonLike.onclick = () => {
-    buttonLike.classList.toggle('active');
-};
 
 // Sub-menu link
 const linkSubMenu = document.querySelector('.link-sub-menu');

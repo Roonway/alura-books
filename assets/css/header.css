@@ -76,6 +76,7 @@
     -webkit-text-fill-color: transparent;
     /* A propriedade 'background-clip: text' aplica o background apenas onde houver texto */
     background-clip: text;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -151,12 +152,13 @@
     .navbar-item.showMenu{
         background: var(--primary-gradient);
     }
-
+    
     .navbar-item.showMenu .navbar-link{
         color: var(--white-color);
     }
     
-    .navbar-item.showMenu .sub-menu{
+    .navbar-item.showMenu .sub-menu,
+    .sub-menu .sub-menu-item{
         display: block;
     }
 
@@ -176,6 +178,21 @@
 
     .navbar{
         margin-right: auto;
+    }
+
+    .sub-menu-item {
+        transition: all 2s;
+    }
+
+    .sub-menu-item:hover {
+        background: var(--primary-gradient);
+    }
+
+    .sub-menu-item:hover .sub-menu-link{
+        background-clip: none;
+        color: var(--white-color);
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: var(--white-color);
     }
 
     .toolbar{

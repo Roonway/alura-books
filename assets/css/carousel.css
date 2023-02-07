@@ -16,6 +16,29 @@
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+    color: var(--white-color);
+    background: var(--primary-gradient);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev{
+    left: 0px;
+}
+
+.swiper-button-next{
+    right: 0px;
+}
+
+.swiper-button-prev::after{
+    font-size: 18px;
+    margin-left: .2em;
+}
+.swiper-button-next::after {
+    font-size: 18px;
+    margin-left: .4em;
 }
 
 .swiper-pagination {

@@ -19,6 +19,7 @@
 
 .topics-item{
     margin: 1.5em 0.5em;
+    transition: all 4s;
 }
 
 .topics-link {
@@ -53,6 +54,11 @@
 @media screen and (min-width: 1728px) {
     .topics {
         padding: 3em 20vw;
+    }
+
+    .topics-link:hover {
+        color: var(--secondary-color);
+        background-color: var(--white-color);
     }
 
     .topics .topics-title {

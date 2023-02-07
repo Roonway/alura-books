@@ -101,6 +101,10 @@
     font-size: 26px;
 }
 
+.toolbar-text {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         justify-content: space-between;
@@ -162,5 +166,35 @@
 
     .toolbar-item.item-favorite {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .header{
+        padding: 0 2em;
+    }
+
+    .navbar{
+        margin-right: auto;
+    }
+
+    .toolbar{
+        margin: initial;
+    }
+
+    .toolbar-item{
+        display: inline-block;
+    }
+
+    .toolbar-link {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: .5em;
+        color: var(--primary-color);
+    }
+
+    .toolbar-text {
+        display: block;
     }
 }

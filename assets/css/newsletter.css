@@ -40,3 +40,34 @@ input.newsletter-email::placeholder{
     font-size: 14px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px) { 
+    .newsletter {
+        padding: 2rem 20%;
+        column-gap: 1.5em;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .newsletter-title{
+        font-size: 24px;
+    }    
+    
+    .newsletter-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .newsletter-email{
+        grid-row: 1 / span 2;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .newsletter {
+        padding: 3em 20vw;
+    }
+
+}

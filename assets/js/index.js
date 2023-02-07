@@ -21,12 +21,36 @@ const swiper = new Swiper('.swiper', {
         modifier: 1,
         slideShadows: true,
     },
-    spaceBetween: 20,
     navigation: false,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
     },
+    spaceBetween: 20,
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: -30,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            spaceBetween: 60,
+        },
+        1728: {
+            slidesPerView: 3,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: -10,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            spaceBetween: 60,
+        }
+    }
 });
 
 // Button Like
